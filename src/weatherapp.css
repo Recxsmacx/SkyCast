@@ -1,0 +1,101 @@
+/* General styles for the Weather App */
+html, body {
+    height: 100%; /* Ensures full viewport height */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87cefa, #ffffff); /* Default gradient background */
+}
+
+/* Main container styles */
+.weather-app {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* Full viewport height */
+    transition: background 0.5s ease; /* Smooth transition for background change */
+    background-size: cover; /* Ensures the background image covers the screen */
+}
+
+/* Heading styles */
+.weather-app h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* SearchBox styling */
+.search-box {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+/* InfoBox styling */
+.info-box {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+.info-box h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #666;
+}
+
+.info-box span {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Background styles based on weather conditions */
+.rainy-bg {
+    background: url('https://plus.unsplash.com/premium_photo-1666717576644-5701d3406840?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+      no-repeat center center / cover; /* Example rainy background */
+    color: #fff; /* Ensure text is readable */
+}
+
+.hot-bg {
+    background: url('https://images.unsplash.com/photo-1504370805625-d32c54b16100?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+      no-repeat center center / cover; /* Example hot weather background */
+    color: #fff; /* Ensure text is readable */
+}
+
+.cold-bg {
+    background: url('https://plus.unsplash.com/premium_photo-1672845514825-96db4b24c233?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+      no-repeat center center / cover; /* Example cold weather background */
+    color: #fff; /* Ensure text is readable */
+}
